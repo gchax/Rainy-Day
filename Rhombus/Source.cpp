@@ -1,5 +1,4 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 
 int main() {
 	int num,row,air1,cloud,air2,raindrop,i=1;
