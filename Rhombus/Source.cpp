@@ -2,21 +2,21 @@
 using namespace std;
 
 int main() {
-	int num,row,outcld,incld,rstar,rspace,i=1;
+	int num,row,air1,cloud,air2,raindrop,i=1;
 	printf("\"When one\'s heart is broken, one shall seek for the rain\"\nSo, how much rain do you need? ");
 	scanf_s("%d",&num);
 	
 	for (row = 1;row <= num / i;row++) {
-		for (outcld = 1;outcld <= (num /2)-2 ;outcld++) printf("  ");
+		for (air1 = 1;air1 <= (num /2)-2 ;air1++) printf("  ");
 		printf("( ");
-		for (incld = 1;incld <= num;incld++) printf("  ");
+		for (cloud = 1;cloud <= num;cloud++) printf("  ");
 		printf(" )");
 		printf("\n");
 		i++;
 	}
 	for (row = 1;row <= num;row++) {
-		for (rspace = 1;rspace <= num-row; rspace++) printf(" ");
-		for (rstar = 1;rstar <= num; rstar++) printf("/ ");
+		for (air2 = 1;air2 <= num-row; air2++) printf(" ");
+		for (raindrop = 1;raindrop <= num; raindrop++) printf("/ ");
 		printf("\n");
 	}
 	printf("\n;)\n");
