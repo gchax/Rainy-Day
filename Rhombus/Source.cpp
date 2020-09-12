@@ -19,7 +19,7 @@ int main() {
 		for (rstar = 1;rstar <= num; rstar++) printf("/ ");
 		printf("\n");
 	}
-	printf(";)");
+	printf("\n;)\n");
 
 	return 0;
 }
